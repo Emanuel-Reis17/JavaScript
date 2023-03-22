@@ -5,8 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao DOM</title>
+    <style>
+        body {
+            background-color: rgb(88, 88, 185);
+            color: white;
+            font: normal 1.2em Arial;
+        } 
+    </style>
 </head>
 <body>
-    <h1>Hoje</h1>
+    <h1>DOM</h1>
+    <p>Aqui vem o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> no JavaScript</p>
+    <div id="div">Clique em mim</div>
+    
+    <script>
+        var d = document.getElementById('div')
+        var corpo = window.document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        document.write('Amostre isso aqui: ' + p1.innerText)
+        corpo.style.backgroundColor = 'black'
+        p1.style.color = 'pink' 
+        /*window.alert(p1.innerText)*/
+        d.style.backgroundColor = 'green'
+        /*window.document.getElementById('div').innerText = 'Olá'*/
+        document.querySelector('div#div')
+        
+    </script>
 </body>
 </html>
