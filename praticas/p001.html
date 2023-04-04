@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            transition-duration: 0.4s;
+        }
+
+        body {
+            background-color: rgb(32, 44, 61);
+            color: white;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: rgb(44, 61, 83);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
+
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(63, 169, 230);
+            margin-bottom: 10px;
+        }
+
+        input {
+            background-color: rgb(32, 44, 61);
+            color: white;
+            font-family: Verdana;
+            height: 35px;
+            margin: 0px 5px 20px 5px;
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        input:hover {
+            border: 1px solid rgb(63, 169, 230);
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.514);
+        }
+
+        input[type=button] {
+            width: 60px;
+        }
+
+        input[type=button]:hover {
+            background-color: rgb(63, 169, 230);
+            font-weight: 600;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Somando valores</h1>
+            <input type="number" name="txt1" id="txt1"> +
+            <input type="number" name="txt2" id="txt2"> =
+            <input type="button" value="somar" onclick="somar()">
+            <h2 id="res">Resultado</h2>
+        </div>
+    </div>
+
+    <script>
+        function somar() {
+            var txt1 = window.document.getElementById('txt1')
+            var txt2 = window.document.querySelector('input#txt2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(txt1.value) 
+            var n2 = Number(txt2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
