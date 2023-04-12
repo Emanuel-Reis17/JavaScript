@@ -80,8 +80,9 @@ input[type=button]:focus-within {
 }
 
 p#res {
-    font-family: monospace;
     background-color: rgb(15, 15, 15);
+    font-family: monospace;
+    font-size: 1em;
     padding: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548)
