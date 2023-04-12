@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Super contagem</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <main id="main">
+        <section id="container">
+            <div id="content">
+                <p>De: <input type="number" name="inicio" id="ini"></p>
+                <p>Até: <input type="number" name="final" id="fim"></p>
+                <p>Passos: <input type="number" name="passos" id="pas"></p>
+                <p><input type="button" value="Contar" onclick="contar()"></p>
+            </div>
+            <div>
+                <p id="res">Resultado: </p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
