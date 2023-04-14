@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Tabuada</title>
+    <style>
+
+        :root {
+            --color0: rgba(0, 0, 0, 0.548);
+            --color1: rgb(15, 29, 37);
+            --color2: rgb(7, 15, 19);
+            --color3: rgb(197, 77, 197);
+            --color4: rgb(175, 70, 175);
+
+            --font0: Arial, Helvetica, sans-serif;
+            --font1: 'Poppins', cursive;
+            --font2: 'Bebas Neue', cursive;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--color1);
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header > h1 {
+            color: white;
+            font-family: var(--font2);
+            font-size: 4em;
+            padding: 30px 0px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container {
+            background-color: var(--color2);
+            width: 600px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <main>
+        <section id="container">
+            <div class="content">
+                <p>Número: <input type="number" name="number" id="xnumber"> <input type="button" value="Mostrar" onclick="tabuada()"></p>
+            </div>
+            <div class="res">
+                <select name="tabuada" id="tab" size="10">
+                    
+                </select>
+            </div>
+        </section>
+    </main>
+    <script>
+        function tabuada(){
+            let number = document.querySelector('input#xnumber')
+            let tab = document.querySelector('select#tab')
+            tab.innerHTML = ''
+
+            if (number.value.length == 0){
+                alert('~[ERRO] Número Inválido! Por favor, tente novamente')
+            } else {
+                let n = Number(number.value)
+                let c = 1
+                while (c <= 10) {
+                    let item = document.createElement('option')
+                    item.text = `${n} x ${c} = ${n*c}`
+                    tab.appendChild(item)
+                    c++
+                }
+            }
+        }
+    </script>
+</body>
+</html>
