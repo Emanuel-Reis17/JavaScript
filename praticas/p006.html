@@ -35,13 +35,15 @@
 
         header {
             text-align: center;
+            background-image: linear-gradient(to bottom,  rgba(0, 0, 0, 0.486), transparent);
         }
 
         header > h1 {
-            color: white;
+            color: var(--color4);
             font-family: var(--font2);
             font-size: 4em;
             padding: 30px 0px;
+            text-shadow: 1px 1px 3px black;
         }
 
         main {
@@ -53,8 +55,65 @@
         #container {
             background-color: var(--color2);
             width: 600px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px var(--color0);
         }
 
+        p {
+            text-align: center;
+            color: var(--color3);
+            font-family: var(--font1);
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        input[type=number] {
+            background-color: var(--color1);
+            text-indent: 10px;
+            color: var(--color3);
+            font-family: var(--font1);
+            font-weight: 700;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 1px 1px 5px var(--color0);
+        }
+
+        input[type=number]:hover {
+            border: 1px solid var(--color4);
+            transition-duration: 0.4s;
+        }
+
+        input[type=button] {
+            background-color: var(--color4);
+            color: white;
+            font-family: var(--font1);
+            height: 30px;
+            padding: 0px 5px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: white;
+            color: var(--color4);
+            font-weight: bold;
+            width: 100px;
+            border: 1px solid var(--color4);
+            box-shadow: 1px 1px 3px var(--color3);
+            transition-duration: 0.4s;
+        }
+
+        select {
+            background-color: var(--color1);
+            color: white;
+            width: 80%;
+            font-family: monospace;
+            font-weight: 500;
+            margin: 50px;
+        }
         
     </style>
 </head>
