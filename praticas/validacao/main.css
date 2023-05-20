@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 16, 19);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(18, 37, 44);
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.63);
+}
+
+h1 {
+    text-align: center;
+}
+
+.infor {
+    margin: 10px;
+}
