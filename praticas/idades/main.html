@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Idades</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Verificador de idades</h1>
+            <div class="infor">
+                <label for="anoNascimento">Ano de Nascimento: </label>
+                <input type="number" name="nascimento" id="anoNascimento" required>
+            </div>
+            <div class="infor">
+                <label for="anoAtual">Ano atual: </label>
+                <input type="number" name="atual" id="anoAtual"   required placeholder="Exemplo: 2023">
+            </div>
+            <input type="submit" value="Verificar" onclick="verificar()">
+            <div id="resultado">
+                <p class="resultado">Resultado</p>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
