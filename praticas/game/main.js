@@ -1,31 +1,37 @@
-alert("BEM-VINDO AO GAME!\nNesse game, você terá que acertar o número secreto escolhido pelo computador! Está preparado?");
-level = prompt("Escolha o nível de dificuldade: \n[1]Iniciante\n[2]Amador\n[3]Profissional");
+function selecionarLevel(){
+    //Selecionando a dificuldade
+    section1 = document.querySelector(".section1").style.display = 'none';
+    level = document.querySelector("#level");
 
-if(level == 1){
-    chances = 10;
-} else if(level == 2){
-    chances = 7;
-} else if(level == 3){
-    chances = 5;
-}
-    
-random_number = Math.floor(Math.random() * 100);
-user_number = prompt("Número secreto gerado, agora é a sua vez de acertar!\nQual é o número secreto?");
-
-while(chances > 0){
-    chances--;
-    if(user_number == random_number){
-        alert(`VOCÊ ACERTOU! Meus parabéns, o número secreto é ${random_number}`);
-        break;
+    //Verificado erro na seleção da dificuldade
+    if(level.value.length == "" || level.value > 3){
+        alert("[ERRO] Por favor digite o número corretamente")
+        section1 = document.querySelector(".section1").style.display = 'block';
     } else {
-        if(user_number > random_number){
-            user_number = prompt(`ERRADO! O número que você digitou é maior do que o número secreto, você tem ${chances} tentativas\nQual é o número secreto?`);
-        } else if(user_number < random_number){
-            user_number = prompt(`ERRADO! O número que você digitou é menor do que o número secreto, você tem ${chances} tentativas\nQual é o número secreto?`);
+        level = Number(level.value);
+        if(level == 1){
+            chances = 10;
+        } else if(level == 2){
+            chances = 7;
+        } else if(level == 3){
+            chances = 5;
         }
     }
 }
 
-if(chances == 0){
-    alert(`Que pena, VOCÊ PERDEU! O número secreto era ${random_number}`);
+//Gerando número secreto
+random_number = Math.floor(Math.random() * 100);
+resultado = document.querySelector(".resultado");
+
+//Iniciando o game
+function verificarNumero(){
+    user_number = document.querySelector("#user_number");
+    user_number = Number(user_number.value);
+    alert(user_number);
+    while(chances > 1){
+        if(user_number == random_number){
+            alert("PARABENS PORRA");
+            resultado.innerText = "massa"
+        }
+    }
 }

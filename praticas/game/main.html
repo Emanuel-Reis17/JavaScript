@@ -8,9 +8,32 @@
 </head>
 <body>
     <main>
-        <section>
+        <div class="container">
+            <section>
+                <h1>BEM-VINDO AO GAME!</h1>
+                <p>Nesse game, você terá que acertar o número secreto escolhido pelo computador!</p>
+                <h3>Digite o número para selecionar a dificuldade: </h3>
+                <ul>
+                    <li class="option1">[1] Fácil</li>
+                    <li class="option2">[2] Médio</li>
+                    <li class="option3">[3] Difícil</li>
+                </ul>
 
-        </section>
+                <div class="section1">
+                    <input type="number" name="level" id="level" required max="1">
+                    <input type="submit" value="Selecionar" onclick="selecionarLevel()">
+                </div>
+
+                <div class="section2">
+                    <label for="user_number">Digite o número: </label><br>
+                    <input type="number" name="user_number" id="user_number">
+                    <input type="submit" value="Enviar" onclick="verificarNumero()">
+                </div>
+            </section>
+            <section>
+                <p class="resultado">...</p>
+            </section>
+        </div>
     </main>
     <script src="main.js"></script>
 </body>
