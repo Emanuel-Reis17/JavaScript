@@ -27,7 +27,7 @@ function verificar(){
     } else if(idade > 100 && idade <= 130){
         resultado.innerHTML = `Você tem ${idade} anos de idade, parabéns por chegar nessa idade, você viveu muito, mas está muito próximo da <strong>morte</strong>.`;
     } else {
-        alert("[ERRO] Idade Inexistente!, Por favor tente novament");
+        alert("[ERRO] Idade Inexistente! Por favor, tente novamente");
         resultado.innerText = "[ERRO]"
     }
 }
