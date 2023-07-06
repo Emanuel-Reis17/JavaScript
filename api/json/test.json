@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Emanuel",
+        "age": 18,
+        "isWorking": true,
+        "work_details": {
+            "job": "Programador",
+            "empresa": "TMonkey"
+        },
+        "hobbies": ["Programar", "Ler", "Jogar"]
+    }
+]
