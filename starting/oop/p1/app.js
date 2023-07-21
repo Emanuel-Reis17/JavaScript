@@ -1,10 +1,14 @@
 import modificador from "./modificador.js";
 import ingredientes from "./ingredientes.js";
 
-console.log(ingredientes);
-console.log(typeof ingredientes);
-console.log(Array.isArray(ingredientes));
-console.log(ingredientes[0].nome);
+let ingredientesOrdenados = modificador.ordenar(ingredientes);
+console.log(ingredientesOrdenados);
+
+// modificador.capitalizarNovo();
+// console.log(ingredientes);
+// console.log(typeof ingredientes);
+// console.log(Array.isArray(ingredientes));
+// console.log(ingredientes[0].nome);
 // let ingredientes = ['mel','água', 'sal', 'mostarda'];
 // let resultadoCapitalizado = modificador.capitalizar(ingredientes);
 // let resultadoOrdenado = modificador.ordenar(resultadoCapitalizado);
