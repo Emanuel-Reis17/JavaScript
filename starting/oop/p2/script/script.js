@@ -1,4 +1,5 @@
 class Produto {
+    
     constructor(){
         this.id = 1;
         this.arrayProdutos = [];
