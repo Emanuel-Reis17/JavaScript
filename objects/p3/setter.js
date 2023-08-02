@@ -1,6 +1,6 @@
-const programmer =  {
+const programmer = {
     firstName: "Emanuel",
-    set changeName(newName){
+    set changeName(newName) {
         this.firstName = newName;
     }
 }
@@ -11,15 +11,17 @@ programmer.changeName = "Adrian";
 
 console.log(programmer.firstName);
 
-function Test(p_name){
-    this.username = p_name
+function Test(p_name) {
+    this.username = p_name;
 }
 
 const person1 = new Test("Emanuel");
 
-Object.defineProperty(person1, "changeName", {set : function(newName){
-    this.username = newName;
-}});
+Object.defineProperty(person1, "changeName", {
+    set: function (newName) {
+        this.username = newName;
+    }
+});
 
 person1.changeName = "Adrian";
 
