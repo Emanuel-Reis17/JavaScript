@@ -1,0 +1,9 @@
+.paragrafo-resultado, .bad {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.bad {
+    background-color: red;
+}
