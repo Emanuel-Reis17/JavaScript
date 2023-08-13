@@ -20,3 +20,8 @@ console.log("|--- ForEach(el, key, array) -------------------------|");
 frutas.forEach((el, index, array) => {
     console.log(el, index, array);
 });
+console.log("|--- ForEach(el, key, array) -------------------------|");
+const products = [['Phone', 'Samsung A01', 500], ['Ipad', 'Iphone', 3000], ['CPU', 'Ryzen', 500]];
+products.forEach((array) => {
+    console.log(array);
+});
