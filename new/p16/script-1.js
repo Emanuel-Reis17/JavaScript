@@ -50,7 +50,7 @@ function Pessoa(nome=null, sobrenome=null, saldo=0.00) {
     this.saldo = Number(saldo).toFixed(2);
     this.apresentaPessoa = () => console.log(`Olá senhor(a) ${this.nome + " " + this.sobrenome}`);
     this.calcularSaldo = () => console.log(`O seu saldo é de R$${this.saldo}`);
-    this.transferenciaPix = (valor) => this.saldo = this.saldo - valor; 
+    this.transferenciaPix = (valor) => this.saldo = this.saldo - valor;
 }
 
 const p1 = new Pessoa("Emanuel", "Reis", 98);
