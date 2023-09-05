@@ -54,6 +54,5 @@ function Pessoa(nome=null, sobrenome=null, saldo=0.00) {
 }
 
 const p1 = new Pessoa("Emanuel", "Reis", 98);
-p1.calcularSaldo();
-p1.transferenciaPix(50);
-p1.calcularSaldo();
+const p2 = new Pessoa("Lucas", "Domingues", 8000);
+console.log(p1, p2);

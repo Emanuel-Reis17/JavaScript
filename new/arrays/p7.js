@@ -2,7 +2,7 @@
 // const total = numeros.reduce(function(acumulador, valor) {
 //     acumulador.push(valor*2);
 //     return acumulador;
-// }, []);
+// }, []); 
 
 // console.log(total);
 //REDUCE ??
