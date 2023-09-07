@@ -1,11 +1,11 @@
 const numeros = [1, 19, 32, 54, 29, 50, 80, 90, 45, 67];
-const total = numeros.reduce(function(acumulador, valor) {
-    acumulador.push(valor*2);
-    return acumulador;
-}, []); 
-
+let total = 0;
+numeros.forEach((valor, indice, array) => {
+    total = array.filter(valor => valor %2 === 0);
+    console.log(total)
+});
 console.log(total);
-//REDUCE ??
+
 const pessoas = [
     {nome: "Emanuel", idade: 18}, 
     {nome: "Gabriel", idade: 29}, 
@@ -13,5 +13,9 @@ const pessoas = [
     {nome: "Ismael", idade: 55}, 
     {nome: "Emanuelly", idade: 24}
 ];
+let idades = [];
+pessoas.forEach((valor, indice, array) => {
+    if (valor.idade < 40) {idades.push(valor)}
+});
 
-console.log();
+console.log(idades);
