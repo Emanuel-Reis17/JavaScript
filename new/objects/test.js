@@ -35,5 +35,9 @@ const conta2 = createAccount("Camile", 16, 1000);
 const conta3 = createAccount("Ismael", 18, 1200);
 const conta4 = createAccount("Gabriel", 19, 1450);
 const conta5 = createAccount("Lucas", 18, 1300);
+const conta6 = createAccount("Juliana", 22, 1);
+
+conta5.pix(200, conta6);
+conta6.perfil();
 //Consultando as contas criadas no banco.
 bancoInter.forEach(valor => console.log(valor.perfil()));

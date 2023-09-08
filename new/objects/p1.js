@@ -34,7 +34,7 @@ function newUser2(username, email, pass) {
         pass
     }
     user.profile = () => {
-        console.log(`Name: ${username} \nEmail: ${email} \nPassword: ${pass}`)
+        console.log(`Name: ${username} \nEmail: ${email} \nPassword: ${pass}`);
     };
 
     return user;
