@@ -2,7 +2,8 @@
 function Pessoa(nome, sobrenome) {
     this.nome = nome, 
     this.sobrenome = sobrenome, 
-    this.hello = () => console.log(`Olá ${this.nome} ${this.sobrenome}`)
+    this.hello = () => console.log(`Olá ${this.nome} ${this.sobrenome}`), 
+    Object.freeze(this);
 }
 
 const p1 = new Pessoa("Emanuel", "Reis");
@@ -16,15 +17,13 @@ function newUser(username, email, pass) {
         email, 
         pass, 
         profile() {
-            console.log(`Name: ${this.username} 
-            \nEmail: ${this.email} 
-            \nPassword: ${this.pass}`);
+            console.log(`Name: ${this.username} \nEmail: ${this.email} \nPassword: ${this.pass}`);
         }
     }
 }
 
 const user = newUser("Emanuel_Reis", "emanuel@gmail.com", "@test244466666");
-user1.profile(); 
+user.profile(); 
 
 // From ChatGPT
 function newUser2(username, email, pass) {
