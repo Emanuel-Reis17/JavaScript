@@ -1,6 +1,6 @@
 function Pessoa(nome, sobrenome) {
-    this.nome = nome, 
-    this.sobrenome = sobrenome
+    this.nome = nome;
+    this.sobrenome = sobrenome;
 }
 
 Pessoa.prototype.nomeCompleto = () => this.nome + " " + this.sobrenome;

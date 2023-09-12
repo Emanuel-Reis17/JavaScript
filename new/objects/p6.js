@@ -30,6 +30,6 @@ const p3 = Object.create(Produto.prototype, {
         enumerable: true, 
         value: 113
     },
-}); // Cria O Objeto setando o prototype e setando as chaves com suas configurações ao mesmo tempo 
+}); // Cria o Objeto setando o prototype e setando as chaves com suas configurações ao mesmo tempo 
 
 console.log(p3);
