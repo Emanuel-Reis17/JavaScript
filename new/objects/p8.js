@@ -1,4 +1,3 @@
-// let cpf = "705.484.450-52";
 function ValidaCPF(cpfEnviado) {
     Object.defineProperty(this, 'cpfLimpo', {
         enumerable: true,  
