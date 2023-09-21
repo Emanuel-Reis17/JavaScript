@@ -16,7 +16,7 @@ function Pessoa2(nome, sobrenome) {
 }
 
 Pessoa2.prototype = Object.create(Pessoa.prototype);
-Pessoa2.prototype.constructor = Pessoa2
+Pessoa2.prototype.constructor = Pessoa2;
 
 const p1 = new Pessoa("Emanuel", "Reis");
 const p2 = new Pessoa2("Melissa", "Reis");

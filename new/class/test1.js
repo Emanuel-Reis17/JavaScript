@@ -5,7 +5,7 @@ class Carro {
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
-        this[_combustivel] = "Não definido";
+        this[_combustivel];
         this[_preco] = 0;
     }
 
@@ -43,8 +43,13 @@ class Carro {
 }
 
 const carro1 = new Carro("Ford", "Ecosport", "Prata");
-carro1.preco = 3000;
-console.log(carro1.preco);
-carro1.combustivel = "Gasolina";
-console.log(carro1.combustivel);
+const carro2 = new Carro("Fiat", "Uno", "Branco");
+// console.log(carro2);
+carro2.combustivel = "Alcool";
+console.log(carro2.combustivel);
 carro1.inspecionar();
+// carro1.preco = 3000;
+// console.log(carro1.preco);
+// carro1.combustivel = "Gasolina";
+// console.log(carro1.combustivel);
+// carro1.inspecionar();
