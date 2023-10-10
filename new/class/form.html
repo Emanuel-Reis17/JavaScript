@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .error-text {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário</h1>
+        <form action="/" method="POST" class="formulario">
+            <label>Nome:</label>
+            <input type="text" class="nome validar"><br><br>
+            <label>Sobrenome:</label>
+            <input type="text" class="sobrenome validar"><br><br>
+            <label>CPF:</label>
+            <input type="text" class="cpf validar"><br><br>
+            <label>Usuário:</label>
+            <input type="text" class="usuario validar"><br><br>
+            <label>Senha:</label>
+            <input type="password" class="senha validar"><br><br>
+            <label>Repetir Senha:</label>
+            <input type="password" class="repetir-senha validar"><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="p5.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
