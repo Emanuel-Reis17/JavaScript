@@ -15,7 +15,6 @@ function esperaAi(msg, tempo) {
 
 esperaAi("Conexão com a Base de Dados", rand(1, 3))
     .then(resposta => {
-        
         console.log(resposta);
         return esperaAi("Buscando os dados da Base de Dados", rand(1, 3))
     })
@@ -32,3 +31,13 @@ esperaAi("Conexão com a Base de Dados", rand(1, 3))
     .catch(e => {
         console.log(e);
     });
+
+function connectDB(msg, time) {
+    return new Promise((resolver, reject) => {
+        setTimeout(() => {
+            if (typeof msg !== "string") reject(new Error("Falha ao conectar"));
+            resolver(msg);
+        }, time);
+    })
+}
+    
