@@ -40,3 +40,11 @@ function carregaResultado(response) {
     const resultado = document.querySelector(".resultado");
     resultado.innerHTML = response;
 }
+
+fetch('p4.html')
+    .then(resposta => {
+        if (resposta.status !== 200) throw new Error("ERROR 404 NOSSO");
+        return resposta.text();
+    })
+    .then(html => console.log(html))
+    .catch(e => console.error(e));
