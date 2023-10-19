@@ -31,7 +31,7 @@ const connectDB = (msg, tempo) => {
 //     .catch(e => console.log(e));
 async function execute() {
     try {
-        const fase1 = await connectDB("Conectando a Base de Dados...+", rand(1, 5));
+        const fase1 = await connectDB("Conectando a Base de Dados...", rand(1, 5));
         console.log(fase1);
         const fase2 = await connectDB("Preparando dados...", rand(1, 5));
         console.log(fase2);

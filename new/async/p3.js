@@ -7,7 +7,6 @@ const rand = (min, max) => {
 const esperaAi = (msg, tempo) => {
     return new Promise((resolver, reject) => {
         setTimeout(() => {
-            console.log(typeof msg === "string");
             if (typeof msg !== 'string') reject(new Error("[ERROR]"));
             resolver(`${msg} - Finalizada`);
         }, tempo);
@@ -20,7 +19,7 @@ const esperaAi = (msg, tempo) => {
         console.log(fase1)
         const fase2 = await esperaAi("Fase 2", rand(1, 5));
         console.log(fase2)
-        const fase3 = await esperaAi(4545545454, rand(1, 5));
+        const fase3 = await esperaAi("Fase 3", rand(1, 5));
         console.log(fase3);
     } catch(e) {
         console.log(e);
